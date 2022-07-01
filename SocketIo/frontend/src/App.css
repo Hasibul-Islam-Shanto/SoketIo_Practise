@@ -1,0 +1,88 @@
+.App {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App .message_box {
+  height: 500px;
+  width: 400px;
+  padding: 0.3rem;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+.App .message_box .message {
+  height: 460px;
+  width: 400px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.App .message_box .message h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.App .message_box .message .me {
+  background: #47b5ff;
+  border-radius: 10px;
+  padding: 0.2rem 0.7rem;
+  color: #fff;
+  text-align: left;
+  margin-left: 10rem;
+}
+.App .message_box .message .you {
+  background: #eeee;
+  border-radius: 10px;
+  padding: 0.2rem 0.7rem;
+  color: #000;
+  text-align: left;
+  margin-right: 10rem;
+}
+.App .message_box .input_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.App .message_box .input_box .input_field {
+  width: 75%;
+  border: none;
+  outline: none;
+  padding: 0.6rem 0.8rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  border-radius: 30px;
+  font-size: 1rem;
+}
+.App .message_box .input_box .btn {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #3ab0ff;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
